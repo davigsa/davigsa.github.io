@@ -3,11 +3,27 @@ body {
     margin: 0;
     color: #e0e0e0;
 }
+.categories {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+}
+
+.categories .lista {
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+
+.categories .lista li {
+    list-style: none;
+    text-decoration: none;
+}
+
 .full-body {
     width: 100vw;
     height: 100vh;
-    background: #f2709c; 
-    background: linear-gradient(to right, #fff, #e0e0e0);
 }
 
 .out-container {
@@ -32,12 +48,13 @@ body {
 }
 
 .ocupation {
-    font-size: 5vw;
+    font-size: 4vw;
     width: fit-content;
     font-family: 'Schoolbell', cursive;
     color: black;
 }
 
-.banana-dots {
-    font-size: 2vw;
+.avocado-dot {
+    font-size: 3vw;
+    display: inline-block;
 }
