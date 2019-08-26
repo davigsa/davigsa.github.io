@@ -1,0 +1,43 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: #e0e0e0;
+}
+.full-body {
+    width: 100vw;
+    height: 100vh;
+    background: #f2709c; 
+    background: linear-gradient(to right, #fff, #e0e0e0);
+}
+
+.out-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-perfil {
+    width: 20%;
+    margin-top: 60px;
+    border-radius: 400px;
+    transform: rotateX(180deg);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.ocupation {
+    font-size: 5vw;
+    width: fit-content;
+    font-family: 'Schoolbell', cursive;
+    color: black;
+}
+
+.banana-dots {
+    font-size: 2vw;
+}
