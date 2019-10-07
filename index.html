@@ -16,6 +16,22 @@
         </script>
     </head>
     <body>
+        <header class='cabecalho'>
+            <a href="https://davigsa.github.io" class="logo">
+                <img src="./assets/trian.png" alt="triangulo logo" class="triang">
+            </a>
+            <div class='header-content'>
+                <a href="#about" class="logo">
+                    <p>About me</p>
+                </a>
+                <a href="#projects" class="logo">
+                    <p>Projects</p>
+                </a>
+                <a href="#contacts" class="logo">
+                    <p>Contact</p>
+                </a>
+            </div>
+        </header>
         <section class='img-parallaxed' id='hero'>
             <div class='hero'>
                 <h1 class='title'> Davi Sá</h1>
@@ -30,9 +46,26 @@
             </div>
         </section>
         <section id='projects'>
+            <div class='placeholder'>Projects</div>
         </section>
         <section id='contacts'>
             <h2 class="speak">Quer falar comigo?</h2>
+            <div class="form-section">
+                <h3>Mande um email</h3>
+                <div class="form-wrapper">
+                    <form action="">
+                    <div class="input-block">
+                        <label for="login-email">Seu melhor email</label>
+                        <input type="email" id="login-email" />
+                    </div>
+                    <div class="input-block">
+                        <label for="login-password">Texto</label>
+                        <input type="text" id="text" />
+                    </div>
+                    <button type="submit" class="btn-login">Mandar!</button>
+                    </form>
+                </div>
+            </div>
             <div class='contacts'>
                 <a href='https://github.com/davigsa' target="_blank">
                     <img src="./assets/github.svg" alt="Github" class="github">
@@ -49,4 +82,5 @@
                 </div>
             </div>
         </section>
+        <script src="./index.js"></script>
     </body>
