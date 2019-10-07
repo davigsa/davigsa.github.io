@@ -7,7 +7,7 @@ body {
 .img-parallaxed {
     width: 100vw;
     height: 100vh;
-    background-image: url(./assets/hero-photo.jpg);
+    background-image: url(./assets/candys.jpg);
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
@@ -30,7 +30,7 @@ body {
     font-size: 100px;
     font-style: italic;
     font-family: 'Crimson Text', serif;
-    color: #00B398;
+    color: #fff;
 }
 
 .description {
@@ -39,7 +39,7 @@ body {
     font-family: 'Crimson Text', serif;
     text-align: center;
     font-weight: 600;
-    color: #00B398;
+    color: #fff;
     transition: 1s linear ease-in-out;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 .estatua {
- height: 80%;
+    width: 50%;
 }
 
 .paragraph {
@@ -84,7 +84,7 @@ body {
     text-align: center;
     font-size: 60px;
     font-family: 'Crimson Text', serif;
-    color: #00B398;
+    color: #000;
 }
 
 .contacts {
@@ -122,4 +122,32 @@ body {
     font-size: 15px;
     font-family: 'Julius Sans One', sans-serif;
     font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .about {
+        flex-direction: column;
+    }
+
+    .estatua {
+        width: 100%;
+    }
+
+    .paragraph {
+        width: 90%;
+    }
+
+    .contacts {
+        flex-direction: column;
+    }
+
+    .speak {
+        margin: 0;
+    }
+
+    .contacts img {
+        height: 50px;
+        margin-top: 20px;
+    }
 }
