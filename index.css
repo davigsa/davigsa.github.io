@@ -9,6 +9,10 @@ body {
     font-family: 'Crimson Text', serif;
 }
 
+li {
+    list-style-type: none;
+}
+
 .img-parallaxed {
     width: 100vw;
     height: 100vh;
@@ -66,7 +70,7 @@ body {
     justify-content: center;
 }
 
-.title {
+.name {
     text-align: center;
     font-size: 100px;
     font-style: italic;
@@ -89,6 +93,7 @@ body {
 }
 
 .about {
+    height: auto;
     width: 100vw;
     background-color: #fff;
     display: flex;
@@ -97,13 +102,74 @@ body {
     border: solid 1px #eaeaea;
 }
 
-.estatua {
+.left {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    background-color: transparent;
+    border: none;
+}
+
+.buttons button :active {
+    border: none;
+}
+
+.buttons img {
+    height: 40px;
+    cursor: pointer;
+}
+
+.text-trade {
+    display: block;
+    width: 100%;
+}
+
+.text-trade :hover{
+    cursor: pointer;
+}
+
+.text-goes {
+    animation: evacuate 1s;
+}
+
+@keyframes evacuate {
+    from {
+        transform: translateX(0);
+    } to {
+        transform: translateX(-50vw);
+    }
+}
+
+@keyframes return {
+    from {
+        transform: translateX(-50vw);
+    } to {
+        transform: translateX(0);
+    }
+}
+
+.estatua {
+    width: 100%;
 }
 
 .paragraph {
     height: 100%;
-    width: 50%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,9 +181,92 @@ body {
     font-style: italic;
 }
 
+.skills {
+    display: none;
+}
+
+#projects {
+    width: 100vw;
+    height: 100vh;
+    border-bottom: solid 1px #eaeaee;
+    overflow: scroll;
+}
+
+.projects {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    width: 30%;
+    height: 70%;
+    border: solid 1px #000;
+    border-radius: 5%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.holder {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DF4723;
+}
+
+.projectasset {
+    zoom: 1.5;
+}
+
+.information {
+    margin: 20px 10px 10px 20px;
+    width: 90%;
+    height: 30%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 25% 5% 70%;
+    grid-template-areas:
+        "title git"
+        "none none"
+        "sub sub";
+}
+
+.information .title {
+    grid-area: title;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #000;
+}
+
+.information .subtitle {
+    margin: 0;
+    grid-area: sub;
+    color: #B1B3B3;
+    font-size: 20px;
+}
+
+.information .git{
+    display: flex;
+    justify-content: center;
+    grid-area: git;
+}
+
+.information .git img {
+    height: 5vh;
+}
+
 #contacts {
     width: 100vw;
-    height: 50vh;
+    height: 40vh;
+}
+
+.flex {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
 }
 
 .speak {
@@ -130,14 +279,18 @@ body {
 
 .contacts {
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    border-top: solid 1px #eaeaea;
+
 }
+/* .contacts a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
 
 .contacts img {
     margin-top: 20px;
-    height: 40px;
+    height: 60px;
 }
 
 .contacts a:hover{
@@ -211,7 +364,7 @@ form .input-block input {
     outline-color: #C10016;
 }
 
-form .btn-login {
+form .btn-send {
     display: block;
     min-width: 120px;
     border: none;
@@ -223,7 +376,19 @@ form .btn-login {
 }
 
 @media only screen and (max-width: 600px) {
-    .header-content{
+
+    /* .placeholder {
+        background-color: rgb(56, 56, 56);
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Julius Sans One', sans-serif;
+    } */
+    /* .header-content{
         display: none;
     }
 
@@ -250,17 +415,5 @@ form .btn-login {
     .contacts img {
         height: 50px;
         margin-top: 20px;
-    }
-}
-
-.placeholder {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(56, 56, 56);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 70px;
-    font-family: 'Julius Sans One', sans-serif;
+    } */
 }

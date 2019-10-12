@@ -8,16 +8,7 @@
         <link rel="manifest" href="./assets/site.webmanifest">
         <meta charset="utf-8" name="viewport" content= "width=device-width, initial-scale=1.0" />
         <link rel = "stylesheet" type ="text/css" href = "./index.css" />
-        <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700|Julius+Sans+One&display=swap" rel="stylesheet">    
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149487037-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-149487037-1');
-        </script>
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700|Julius+Sans+One&display=swap" rel="stylesheet">        
     </head>
     <body>
         <header class='cabecalho'>
@@ -26,58 +17,108 @@
             </a>
             <div class='header-content'>
                 <a href="#about" class="logo">
-                    <p>About me</p>
+                    <p>Sobre mim</p>
                 </a>
                 <a href="#projects" class="logo">
-                    <p>Projects</p>
+                    <p>Projetos</p>
                 </a>
                 <a href="#contacts" class="logo">
-                    <p>Contact</p>
+                    <p>Contato</p>
                 </a>
             </div>
         </header>
         <section class='img-parallaxed' id='hero'>
             <div class='hero'>
-                <h1 class='title'> Davi Sá</h1>
+                <h1 class='name'> Davi Sá</h1>
                 <h2 class='description'>"Desenvolvedor Front-end <span class='riscado'>e Back-end</span>"</h2>
             </div>
         </section>
         <section id='about'>
             <div class='about'>
-                <p class='paragraph'>Menino do interior, amante dos "bicho tudo" e mineiro de coração. Estudante de engenharia de Telecom. Estagiário de front-end no @Descomplica e full stack esforçado nos estudos. 
-                    Curto um Classic Rock e jogo MMORPG, então não me fale mal de wow. Chamo tudo que não sei de trem 🚂.. (e o que eu sei também ;)</p>
-                <img src='./assets/euzinho.JPG' alt='Minha estátua' class='estatua' />
+                <div class="left">
+                    <div class='text-trade'>
+                        <p class='paragraph about-me'>Menino do interior, amante dos "bicho tudo" e mineiro de coração. Estudante de engenharia de Telecom. Estagiário de front-end no @Descomplica e full stack esforçado nos estudos. 
+                        Curto um Classic Rock e jogo MMORPG, então não me fale mal de wow. Chamo tudo que não sei de trem 🚂.. (e o que eu sei também ;)</p>
+                        <ul class='paragraph skills'>
+                            <li class='description' style='color: black;'>Skills</li>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>ReactJS</li>
+                            <li>React Native</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
+                    <div class='buttons'>
+                            <button class='green'>
+                                <img src="./assets/jelly-green.svg">
+                                <footer>Sobre</footer>
+                            </button>
+                            <button class='purple'>
+                                <img src="./assets/jelly-purple.svg">
+                                <footer>Skills</footer>
+                            </button>
+                        </div>
+                </div>
+                <div class="right">
+                    <img src='./assets/euzinho.JPG' alt='Davi Sa sorrindo' class='estatua' />
+                </div>
             </div>
         </section>
         <section id='projects'>
-            <div class='placeholder'>Projects</div>
+            <div class='projects'>
+                <div class="card">
+                    <div class="holder">
+                        <img src="./assets/tindev.svg" alt="Tindev" class="projectasset">
+                    </div>
+                    <div class="information">
+                        <h3 class="title">Tindev</h3>
+                        <p class="subtitle">Projeto realizado na semana 8 do curso Omnistack realizado pela Rocketseat.</p>
+                        <a href='https://github.com/davigsa' target="_blank" class='git'>
+                            <img src="./assets/github.svg" alt="Github" class="github">
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="holder" style='background-color: #F05A5B;' >
+                        <img src="./assets/aircnc.svg" alt="Aircnc" class="projectasset">
+                    </div>                    
+                    <div class="information">
+                        <h3 class="title">Aircnc</h3>
+                        <p class="subtitle">Projeto realizado na semana 9 do curso Omnistack realizado pela Rocketseat.</p>
+                        <a href='https://github.com/davigsa' target="_blank" class='git'>
+                            <img src="./assets/github.svg" alt="Github" class="github">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id='contacts'>
+        <footer id='contacts'>
             <h2 class="speak">Quer falar comigo?</h2>
-            <div class="form-section">
+            <!-- <div class="form-section">
                 <h3>Mande um email</h3>
                 <div class="form-wrapper">
                     <form action="">
                     <div class="input-block">
-                        <label for="login-email">Seu melhor email</label>
-                        <input type="email" id="login-email" />
+                        <label for="send-email">Seu melhor email</label>
+                        <input type="email" id="send-email" />
                     </div>
                     <div class="input-block">
-                        <label for="login-password">Texto</label>
+                        <label for="send-password">Texto</label>
                         <input type="text" id="text" />
                     </div>
-                    <button type="submit" class="btn-login">Mandar!</button>
+                    <button type="submit" class="btn-send">Mandar!</button>
                     </form>
                 </div>
-            </div>
+            </div> -->
             <div class='contacts'>
-                <a href='https://github.com/davigsa' target="_blank">
+                <a href='https://github.com/davigsa' target="_blank" class="github">
                     <img src="./assets/github.svg" alt="Github" class="github">
                 </a>
-                <a href='https://www.linkedin.com/in/davigsa/' target="_blank">
+                <a href='https://www.linkedin.com/in/davigsa/' target="_blank"  class="linkedin">
                     <img src="./assets/linkedin.svg" alt="Linkedin" class="linkedin">
                 </a>
-                <a href='https://twitter.com/biofilho_' target="_blank">
+                <a href='https://twitter.com/biofilho_' target="_blank" class="twitter">
                     <img src="./assets/twitter.svg" alt="Twitter" class="twitter">
                 </a>
                 <div class='email'>
@@ -85,6 +126,16 @@
                     <footer>davi.goulartsa@gmail.com</footer>
                 </div>
             </div>
-        </section>
+        </footer>
+
         <script src="./index.js"></script>
+        <script src="./data.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149487037-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149487037-1');
+        </script>
     </body>
