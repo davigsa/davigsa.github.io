@@ -16,6 +16,9 @@ body {
 }
 
 .cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 90%;
   border-bottom: solid 3px var(--blackCat);
 }
