@@ -1,13 +1,11 @@
 :root {
-  --beigeSand: #F1CAAD;
-  --beigeSandLigth: rgba(241, 202, 173, .6);
+  --purplePoison: #483698;
   --blackCat: #000;
   --snowWhite: #fff;
 }
 
 body {
   width: 100vw;
-  /* background-color: var(--beigeSandLigth); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,6 +76,11 @@ h3 {
 p {
   font-size: 15px;
   font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: var(--purplePoison);
 }
 
 a button {
