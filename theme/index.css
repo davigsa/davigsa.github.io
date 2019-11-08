@@ -13,6 +13,10 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+li {
+  margin-bottom: 1%;
+}
+
 .cabecalho {
   display: flex;
   align-items: center;
@@ -44,6 +48,14 @@ main {
 }
 
 .main-content .bigger {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.main-content .resumo {
   height: 30%;
   width: 100%;
   display: flex;
@@ -100,12 +112,17 @@ a button {
 @media screen and (max-width: 600px) {
 
   main {
-    height: 170vh;
+    height: 200vh;
   }
 
   .main-content {
     flex-wrap: nowrap;
     width: 100%;
+  }
+
+  .main-content .bigger {
+    height: 15%;
+    margin-bottom: 1vh;
   }
 
   h1 {
