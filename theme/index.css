@@ -99,14 +99,15 @@ a {
 }
 
 a button {
-  margin-top: 2vh;
-  width: 15vw;
-  height: 5vh;
   background-color: var(--blackCat);
+  border-radius: 20px;
   color: var(--snowWhite);
+  cursor: pointer;
   font-size: 15px;
   font-weight: bold;
-  border-radius: 20px;
+  height: 5vh;
+  margin-top: 2vh;
+  width: 15vw;
 }
 
 @media screen and (max-width: 600px) {
