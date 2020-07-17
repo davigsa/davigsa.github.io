@@ -36,6 +36,14 @@ nav a {
   font-weight: bold;
   font-size: 1rem;
   box-shadow: 3px 3px 0px #9e9ea1;
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+}
+
+nav a:hover {
+  background: #6633cc;
+  box-shadow: 3px 3px 0px #4c2699;
+  color: #f6f6f6;
 }
 
 ul {
@@ -46,6 +54,7 @@ ul {
 
 footer {
   text-align: center;
+  margin-top: 40px;
   color: #9e9ea1;
   font-size: 0.6rem;
   font-family: PT Mono, monospace;
@@ -111,6 +120,7 @@ footer p {
 }
 
 .half-container {
+  width: 90vw;
   position: relative;
   background: #252131;
   color: #f6f6f6;
@@ -120,7 +130,7 @@ footer p {
 
 .fake-buttons {
   position: absolute;
-  top: 13px;
+  top: 10px;
   left: 10px;
 }
 
@@ -132,7 +142,7 @@ footer p {
 }
 
 .container {
-  height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 30px 40px;
@@ -152,6 +162,10 @@ footer p {
 }
 
 .card-black {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -45%);
   padding: 10px 15px;
   margin: 15px 15px 0 0;
   background: #252131;
@@ -159,10 +173,75 @@ footer p {
   font-family: Roboto, sans-serif;
   color: #f6f6f6;
   box-shadow: 8px 8px 0px #13111b;
-  width: 70%;
+  width: 60%;
   height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.msn {
+  background: #514d5a;
+  border-radius: 10px;
+  width: 90%;
+  height: 80%;
+}
+
+.fake-header {
+  position: relative;
+  background: #f6f6f6;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 10%;
+}
+
+.msn-body {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.message {
+  background: #ff79c6;
+  border-radius: 10px 10px 10px 0;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+  margin-top: 10px;
+}
+
+.message-rounded {
+  background: #fd92d0;
+  border-radius: 10px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+  margin-top: 10px;
+}
+
+.message img,
+.message-rounded img {
+  zoom: 0.3;
 }
 
 #about {
   z-index: 10;
+}
+
+#contact {
+  height: 110vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-black {
+    width: 100%;
+    top: 40%;
+  }
+
+  #contact {
+    height: 80vh;
+  }
 }

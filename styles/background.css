@@ -1,0 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
+.first {
+  background-image: url("../assets/cross_red.svg") no-repeat;
+}

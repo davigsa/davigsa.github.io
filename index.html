@@ -21,11 +21,12 @@
 
     <link rel="stylesheet" type="text/css" href="./styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/background.css" />
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="https://cdn.jsdelivr.net/npm/paroller.js/dist/jquery.paroller.min.js"></script>
   </head>
-  <body>
+  <body class="first second third">
     <section class="container-centered">
       <h1>DAVI SÁ</h1>
       <div>
@@ -33,15 +34,15 @@
       </div>
 
       <nav>
-        <a href="#about" class="navegation">SOBRE</a>
-        <a href="#projects" class="navegation">PROJETOS</a>
-        <a href="#contact" class="navegation">CONTATO</a>
+        <a id="nav1" class="navegation">SOBRE</a>
+        <a id="nav2" class="navegation">PROJETOS</a>
+        <a id="nav3" class="navegation">CONTATO</a>
       </nav>
     </section>
     <section
       class="half-container"
       id="about"
-      data-paroller-factor="0.1"
+      data-paroller-factor="0.2"
       data-paroller-type="foreground"
       data-paroller-direction="vertical"
     >
@@ -64,7 +65,13 @@
         e alguns frameworks e libs a mais.
       </p>
     </section>
-    <section class="container" id="projects">
+    <section
+      class="container"
+      id="projects"
+      data-paroller-factor="0.1"
+      data-paroller-type="foreground"
+      data-paroller-direction="vertical"
+    >
       <h2>PROJETOS</h2>
       <ul
         class="cards"
@@ -80,17 +87,48 @@
     <section
       class="container"
       id="contact"
-      data-paroller-factor="0.2"
+      data-paroller-factor="0.3"
       data-paroller-type="foreground"
       data-paroller-direction="vertical"
     >
       <h2>BATE UM PAPO <br />COMIGO</h2>
-      <div
-        class="card-black"
-        data-paroller-factor="0.1"
-        data-paroller-type="foreground"
-        data-paroller-direction="horizontal"
-      ></div>
+      <div class="card-black">
+        <div class="msn">
+          <header class="fake-header">
+            <ul class="fake-buttons">
+              <li class="buttons red"></li>
+              <li class="buttons yellow"></li>
+              <li class="buttons green"></li>
+            </ul>
+          </header>
+          <div class="msn-body">
+            <a
+              href="https://www.linkedin.com/in/davigsa/"
+              class="message-rounded"
+              target="_blank"
+              ><img
+                src="./assets/linkedin.svg"
+                alt="Perfil linkedin Davi Sá"
+              /> </a
+            ><a
+              href="mailto:davi.goulartsa@gmail.com?Subject=Gostaria%de%falar%com%voce"
+              class="message-rounded"
+              ><img src="./assets/gmail.svg" alt="Email Davi Sá" /> </a
+            ><a
+              href="https://twitter.com/biofilho_"
+              class="message-rounded"
+              target="_blank"
+              ><img src="./assets/twitter.svg" alt="Perfil twitter Davi Sá" />
+            </a>
+            <a
+              href="https://github.com/davigsa/"
+              class="message"
+              target="_blank"
+              ><img src="./assets/github.svg" alt="Perfil Github Davi Sá"
+            /></a>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
       <p>
