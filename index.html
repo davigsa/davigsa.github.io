@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Davigsa || Currículo</title>
+    <title>@davigsa</title>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -19,103 +19,72 @@
       content="width=device-width, initial-scale=1.0"
     />
 
-    <link rel="stylesheet" type="text/css" href="./theme/reset.css" />
-    <link rel="stylesheet" type="text/css" href="./theme/index.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
   </head>
   <body>
-    <header class="cabecalho">
-      <h1 class="name">DAVI GOULART DE SÁ</h1>
-    </header>
-    <main>
-      <ul class="main-content">
-        <li class="bigger">
-          <header>
-            <h2>CONTATO</h2>
-          </header>
-          <ul>
-            <li>Telefone: (22) 98854-1760</li>
-            <li>Email: davigsa@id.uff.br</li>
-            <li>
-              LinkedIn:
-              <a href="https://www.linkedin.com/in/davigsa/" target="_blank"
-                >@davigsa</a
-              >
-            </li>
-            <li>
-              Github:
-              <a href="https://github.com/davigsa" target="_blank">davigsa</a>
-            </li>
-          </ul>
-        </li>
-        <li class="bigger">
-          <header>
-            <h2>COMPETÊNCIAS</h2>
-          </header>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Sass</li>
-            <li>NextJs</li>
-            <li>ReactJs</li>
-            <li>React Native</li>
-            <li>Git</li>
-            <li>NodeJs</li>
-            <li>Espírito de equipe</li>
-            <li>Proatividade</li>
-            <li>Resolução de problemas</li>
-          </ul>
-        </li>
-        <li class="bigger">
-          <header>
-            <h2>IDIOMAS</h2>
-          </header>
-          <ul>
-            <li>Portugês Nativo</li>
-            <li>Inglês Avançado</li>
-          </ul>
-        </li>
-        <li class="bigger">
-          <header>
-            <h2>CURSOS</h2>
-          </header>
-          <h3>Universidade Federal Fliminense - UFF</h3>
-          <p>
-            Curso de Excel avançado e VBA ministrado pelo professor Márcio
-            Antônio Sens.
-          </p>
-          <h3>Go Stack - Rocketseat</h3>
-          <p>Curso de NodeJs, React e React Native.</p>
-        </li>
-        <li class="resumo">
-          <header>
-            <h2>RESUMO PROFISSIONAL</h2>
-          </header>
-          <h3>Estágio em Engenharia de Software</h3>
-          <p>Descomplica, 2019 - Atual</p>
-          <ul>
-            <li>
-              Criação e desenvolvimento de landings com React, HTML e CSS.
-            </li>
-            <li>Criação de tests automatizados com Jest.</li>
-            <li>Análise de SEO e melhoramento do desempenho das páginas.</li>
-            <li>
-              Integração das landings com nossa plataforma CMS desenvolvida em
-              NodeJs.
-            </li>
-          </ul>
-        </li>
-        <li class="bigger">
-          <header>
-            <h2>FORMAÇÃO</h2>
-          </header>
-          <h3>Universidade Federal Fliminense - UFF</h3>
-          <p>Bacharel em Engenharia de Telecomunicações, 2015 - Presente</p>
-        </li>
+    <section class="container-centered">
+      <h1>DAVI SÁ</h1>
+      <div>
+        <span class="typewritter"></span>
+      </div>
+
+      <nav>
+        <a href="#about" class="navegation">SOBRE</a>
+        <a href="#projects" class="navegation">PROJETOS</a>
+        <a href="#contact" class="navegation">CONTATO</a>
+      </nav>
+    </section>
+    <section class="half-container" id="about">
+      <ul class="fake-buttons">
+        <li class="buttons red"></li>
+        <li class="buttons yellow"></li>
+        <li class="buttons green"></li>
       </ul>
-    </main>
-    <a href="download/davi-sa.pdf" download="curriculo_davi_sa.pdf">
-      <button>Baixar Currículo</button>
-    </a>
+      <p class="typed">
+        > Olá, meu nome é <span class="green-text">Davi</span>. Tenho 22 anos e
+        sou estudante de engenharia de telecomunicações pela UFF. Sou
+        desenvolvedor fullstack há 2 anos e já trabalhei nas empresas
+        Descomplica e Eleva Educação. <br /><br />Me considero uma pessoa
+        autodidata, proativa e acredito que grande parte dos problemas podem ser
+        resolvidos com um trabalho em esquipe bem feito.<br />
+        Meus conhecimentos na área de tecnologia envolvem
+        <span class="orange-text"
+          >Node.js, React, Angular, JavaScript, HTML, CSS</span
+        >
+        e alguns frameworks e libs a mais.
+      </p>
+    </section>
+    <section class="container" id="projects">
+      <h2>PROJETOS</h2>
+      <ul>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
+      </ul>
+    </section>
+    <section class="container" id="contact">
+      <h2>BATE UM PAPO <br />COMIGO</h2>
+      <div class="card-black"></div>
+    </section>
+    <footer>
+      <p>
+        COPYRIGHT © 2020. DAVIGSA - NITERÓI / RJ | RIO DE JANEIRO / RJ - TODOS
+        OS DIREITOS RESERVADOS.
+      </p>
+      <span
+        >made with 💙 by
+        <a class="blue-text" href="https://github.com/davigsa/" target="_blank"
+          >@davigsa</a
+        ></span
+      >
+    </footer>
   </body>
+  <script src="./index.js"></script>
 </html>

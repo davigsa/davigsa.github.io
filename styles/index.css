@@ -1,0 +1,164 @@
+h1 {
+  font-family: Roboto, sans-serif;
+  font-weight: bolder;
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: Roboto, sans-serif;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: PT Mono, monospace;
+  font-size: 1rem;
+}
+
+.typewritter {
+  font-family: PT Mono, monospace;
+  font-size: 1.3rem;
+}
+
+nav {
+  margin-top: 70px;
+}
+
+nav a {
+  margin-left: 15px;
+  background: #e1e1e6;
+  padding: 5px 10px;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  color: #100e1a;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 3px 3px 0px #9e9ea1;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  text-align: center;
+  color: #9e9ea1;
+  font-size: 0.5rem;
+  font-family: PT Mono, monospace;
+  padding: 0 10px 20px 10px;
+}
+
+footer p {
+  font-size: 0.6rem;
+  margin-bottom: 10px;
+  line-height: 0.8rem;
+}
+
+.typed::after {
+  content: "|";
+  transition: ease-in-out 0.3s;
+  opacity: 1;
+  animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.green-text {
+  color: #4dab60;
+}
+
+.orange-text {
+  color: #e89e64;
+}
+
+.blue-text {
+  color: #5d98f9;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.red {
+  background: #e96379;
+}
+
+.yellow {
+  background: #e7de79;
+}
+
+.green {
+  background: #4dab60;
+}
+
+.container-centered {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.half-container {
+  position: relative;
+  background: #252131;
+  color: #f6f6f6;
+  padding: 40px 40px 70px 40px;
+  font-size: 0.8rem;
+}
+
+.fake-buttons {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+}
+
+.buttons {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 10px 15px;
+  margin: 15px 15px 0 0;
+  background: #e1e1e6;
+  padding: 5px 10px;
+  font-family: Roboto, sans-serif;
+  color: #100e1a;
+  box-shadow: 5px 5px 0px #9e9ea1;
+  width: 100px;
+  height: 100px;
+}
+
+.card-black {
+  padding: 10px 15px;
+  margin: 15px 15px 0 0;
+  background: #252131;
+  padding: 5px 10px;
+  font-family: Roboto, sans-serif;
+  color: #f6f6f6;
+  box-shadow: 8px 8px 0px #13111b;
+  width: 70%;
+  height: 300px;
+}
