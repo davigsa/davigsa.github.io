@@ -51,4 +51,3 @@ new Typed(".typewritter", {
 $(".cards").paroller();
 $("#about").paroller();
 $("#projects").paroller();
-$("#contact").paroller();
