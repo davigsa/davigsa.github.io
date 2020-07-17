@@ -102,6 +102,7 @@ section {
 }
 body {
   line-height: 1;
+  width: 100vw;
   color: #100e1a;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
