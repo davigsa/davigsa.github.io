@@ -152,15 +152,38 @@ footer p {
 }
 
 .card {
-  padding: 10px 15px;
-  margin: 25px 15px 0 0;
+  padding: 30px 15px !important;
+  margin: 25px 15px;
   background: #e1e1e6;
   padding: 5px 10px;
   font-family: Roboto, sans-serif;
   color: #100e1a;
   box-shadow: 5px 5px 0px #9e9ea1;
-  width: 110px;
-  height: 100px;
+  width: 200px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #514d5a;
+}
+
+.card p,
+.card a {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.card a {
+  color: #4dab60;
+  text-decoration: none;
+  font-style: italic;
+  transition: all ease-in 0.3s;
+}
+
+.card a:hover {
+  color: #67e480;
 }
 
 .card-black {
@@ -241,6 +264,10 @@ footer p {
   .half-container {
     width: 90%;
     padding: 50px 40px 70px 40px;
+  }
+
+  .card {
+    width: 80%;
   }
 
   .card-black {
