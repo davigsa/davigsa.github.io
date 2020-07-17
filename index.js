@@ -13,6 +13,7 @@ new Typed(".typewritter", {
   strings: [
     "Desenvolvedor frontend",
     "Desenvolvedor backend",
+    "Admirador de CSS crocante",
     "Amante dos animais",
     "Biblioteca de memes",
   ],
