@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/index.css" />
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/paroller.js/dist/jquery.paroller.min.js"></script>
   </head>
   <body>
     <section class="container-centered">
@@ -37,7 +38,13 @@
         <a href="#contact" class="navegation">CONTATO</a>
       </nav>
     </section>
-    <section class="half-container" id="about">
+    <section
+      class="half-container"
+      id="about"
+      data-paroller-factor="0.1"
+      data-paroller-type="foreground"
+      data-paroller-direction="vertical"
+    >
       <ul class="fake-buttons">
         <li class="buttons red"></li>
         <li class="buttons yellow"></li>
@@ -59,19 +66,31 @@
     </section>
     <section class="container" id="projects">
       <h2>PROJETOS</h2>
-      <ul>
-        <li class="card"></li>
-        <li class="card"></li>
-        <li class="card"></li>
-        <li class="card"></li>
+      <ul
+        class="cards"
+        data-paroller-type="foreground"
+        data-paroller-factor="-0.2"
+        data-paroller-direction="horizontal"
+      >
         <li class="card"></li>
         <li class="card"></li>
         <li class="card"></li>
       </ul>
     </section>
-    <section class="container" id="contact">
+    <section
+      class="container"
+      id="contact"
+      data-paroller-factor="0.2"
+      data-paroller-type="foreground"
+      data-paroller-direction="vertical"
+    >
       <h2>BATE UM PAPO <br />COMIGO</h2>
-      <div class="card-black"></div>
+      <div
+        class="card-black"
+        data-paroller-factor="0.1"
+        data-paroller-type="foreground"
+        data-paroller-direction="horizontal"
+      ></div>
     </section>
     <footer>
       <p>

@@ -23,3 +23,8 @@ new Typed(".typewritter", {
   backSpeed: 90,
   backDelay: 900,
 });
+
+$(".cards").paroller();
+$(".card-black").paroller();
+$("#about").paroller();
+$("#contact").paroller();
