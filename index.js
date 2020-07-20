@@ -1,26 +1,14 @@
-$("#nav1").click(function () {
-  $([document.documentElement, document.body]).animate(
-    {
-      scrollTop: $(`#about`).offset().top,
-    },
-    1000
-  );
-});
-$("#nav2").click(function () {
-  $([document.documentElement, document.body]).animate(
-    {
-      scrollTop: $(`#projects`).offset().top,
-    },
-    1000
-  );
-});
-$("#nav3").click(function () {
-  $([document.documentElement, document.body]).animate(
-    {
-      scrollTop: $(`#contact`).offset().top,
-    },
-    1000
-  );
+const navigation = document.querySelectorAll("#nav");
+
+navigation.forEach((navIcon) => {
+  navIcon.addEventListener("click", function () {
+    $([document.documentElement, document.body]).animate(
+      {
+        scrollTop: $(navIcon.getAttribute("name")).offset().top,
+      },
+      1000
+    );
+  });
 });
 
 new Typed(".typewritter", {
@@ -42,4 +30,14 @@ $(".cards").paroller();
 $("#about").paroller();
 $("#projects").paroller();
 
-//parallax objects
+//analytics events
+const links = document.querySelectorAll("a");
+
+links.forEach((link) => {
+  link.addEventListener("click", function () {
+    return gtag("event", "click", {
+      event_category: link.getAttribute("id"),
+      event_label: link.getAttribute("name"),
+    });
+  });
+});
