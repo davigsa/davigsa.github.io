@@ -2,17 +2,15 @@
 <html>
   <head>
     <title>@davigsa</title>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon.svg"
-    />
+    <meta charset="UTF-8" />
     <meta
-      charset="utf-8"
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
+      name="description"
+      content="davigsa`s  portfolio and personal webpage"
     />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Davi Sá" />
+    <link rel="icon" type="image/png" href="./assets/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" type="text/css" href="./styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="./styles/index.css" />
@@ -21,8 +19,11 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="https://cdn.jsdelivr.net/npm/paroller.js/dist/jquery.paroller.min.js"></script>
   </head>
-  <body class="first second third">
+  <body>
     <section class="container-centered">
+      <div class="first"></div>
+      <div class="second"></div>
+      <div class="third"></div>
       <h1>DAVI SÁ</h1>
       <div>
         <span class="typewritter"></span>
@@ -55,7 +56,8 @@
         resolvidos com um trabalho em equipe bem feito.<br />
         Meus conhecimentos na área de tecnologia envolvem
         <span class="orange-text"
-          >Node.js, React, Angular, JavaScript, HTML, CSS</span
+          >Node.js, GraphQL, React, Angular, JavaScript, Typescript, HTML, CSS,
+          testes automatizados com Jest</span
         >
         e alguns frameworks e libs a mais.
       </p>
@@ -72,67 +74,87 @@
         <li class="card">
           <h3>Poodle Doodle</h3>
           <p>
-            Client version for poodle-doodle social network using react,
-            typescript and redux.
+            Cliente de uma aplicação desenvolvida em React e Redux com a
+            finalidade de recriar uma rede social.
           </p>
           <a href="https://github.com/davigsa/poodle-doodle">(Ver mais)</a>
         </li>
         <li class="card">
           <h3>Climanit</h3>
           <p>
-            Node.js bot that interacts with Weather API and tweets about it.
+            Bot desenvolvido em node.js que requisita dados sobre o clima na
+            cidade de Niterói de uma API externa e tweeta as respostas tratatas
+            em uma liguagem atual numa conta do twitter.
           </p>
           <a href="https://github.com/davigsa/climanit">(Ver mais)</a>
         </li>
         <li class="card">
           <h3>Graphql.ts</h3>
-          <p>Boilerplate to Node.js GraphQL API with Typescript.</p>
+          <p>
+            Template desenvolvido por mim para facilitar a criação de novas APIs
+            com GraphQL e Typescript. Conta também com prettier, eslint e outras
+            ferramentas.
+          </p>
           <a href="https://github.com/davigsa/graphql.ts">(Ver mais)</a>
         </li>
         <li class="card">
           <h3>Node.ts</h3>
-          <p>Boilerplate to Node.js Rest API with Typescript.</p>
+          <p>
+            Template desenvolvido por mim para facilitar a criação de novas APIs
+            modelo rest com Express e Typescript. Conta também com prettier,
+            eslint, jest e outras ferramentas.
+          </p>
           <a href="https://github.com/davigsa/node.ts">(Ver mais)</a>
+        </li>
+        <li class="card">
+          <h3>Workshop Graphql</h3>
+          <p>
+            Artigo feito pra quem quer começar a utilizar GraphQL ou apenas
+            entender como ele funciona. Esse repositório contém também dois
+            CRUDs tanto em Rest quanto em GraphQL.
+          </p>
+          <a href="https://github.com/davigsa/workshop-graphql">(Ver mais)</a>
         </li>
       </ul>
     </section>
-    <section class="container" id="contact">
-      <h2>BATE UM PAPO <br />COMIGO</h2>
-      <div class="card-black">
-        <div class="msn">
-          <header class="fake-header">
-            <ul class="fake-buttons">
-              <li class="buttons red"></li>
-              <li class="buttons yellow"></li>
-              <li class="buttons green"></li>
-            </ul>
-          </header>
-          <div class="msn-body">
-            <a
-              href="https://www.linkedin.com/in/davigsa/"
-              class="message-rounded"
-              target="_blank"
-              ><img
-                src="./assets/linkedin.svg"
-                alt="Perfil linkedin Davi Sá"
-              /> </a
-            ><a
-              href="mailto:davi.goulartsa@gmail.com?Subject=Gostaria%de%falar%com%voce"
-              class="message-rounded"
-              ><img src="./assets/gmail.svg" alt="Email Davi Sá" /> </a
-            ><a
-              href="https://twitter.com/biofilho_"
-              class="message-rounded"
-              target="_blank"
-              ><img src="./assets/twitter.svg" alt="Perfil twitter Davi Sá" />
-            </a>
-            <a
-              href="https://github.com/davigsa/"
-              class="message"
-              target="_blank"
-              ><img src="./assets/github.svg" alt="Perfil Github Davi Sá"
-            /></a>
-          </div>
+    <section class="half-container" id="contact">
+      <h2>BATA UM PAPO <br />COMIGO</h2>
+      <div class="msn">
+        <header class="fake-header">
+          <ul class="fake-buttons">
+            <li class="buttons red"></li>
+            <li class="buttons yellow"></li>
+            <li class="buttons green"></li>
+          </ul>
+        </header>
+        <div class="cabecalho">
+          <img src="./assets/perfil.jpg" alt="Foto de perfil Davi Sá" />
+          <span>Davi Sá</span>
+        </div>
+        <div class="msn-body">
+          <a
+            href="https://www.linkedin.com/in/davigsa/"
+            class="message-rounded"
+            target="_blank"
+            ><img src="./assets/linkedin.svg" alt="Perfil linkedin Davi Sá" />
+          </a>
+          <a
+            href="mailto:davi.goulartsa@gmail.com?Subject=Gostaria%de%falar%com%voce"
+            class="message-rounded"
+            ><img src="./assets/gmail.svg" alt="Email Davi Sá" /> </a
+          ><a
+            href="https://twitter.com/biofilho_"
+            class="message-rounded"
+            target="_blank"
+            ><img src="./assets/twitter.svg" alt="Perfil twitter Davi Sá" />
+          </a>
+          <a
+            href="https://github.com/davigsa/"
+            class="message-rounded"
+            target="_blank"
+            ><img src="./assets/github.svg" alt="Perfil Github Davi Sá"
+          /></a>
+          <p class="message-text">Experimente clicar em qualquer sticker! 🤘🏻</p>
         </div>
       </div>
     </section>
