@@ -7,13 +7,15 @@
   top: 0;
   width: 100%;
   height: 300%;
-  background-image: url(../assets/cross_yellow.svg),
-    url(../assets/circle_green.svg), url(../assets/line_blue.svg);
-  background-position: 50% 0, 30% 90%, 90% 75%;
+  background-image: url(../assets/first/circle_blue.svg),
+    url(../assets/first/circle_green.svg),
+    url(../assets/first/circle_marine.svg),
+    url(../assets/first/cross_orange.svg), url(../assets/first/line_red.svg),
+    url(../assets/first/line_yellow.svg);
+  background-position: 50% 2%, 30% 90%, 90% 75%, 85% 40%, 20% 55%, 90% 15%;
   background-color: transparent;
-  background-repeat: no-repeat, no-repeat;
+  background-repeat: no-repeat;
   background-size: 6%;
-  filter: blur(0.5px);
   z-index: 0;
 }
 
@@ -22,10 +24,12 @@
   top: 0;
   width: 100%;
   height: 300%;
-  background-image: url(../assets/cross_pink.svg),
-    url(../assets/circle_blue.svg), url(../assets/line_red.svg);
-  background-position: 20% 20%, 10% 0%, 75% 38%;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url(../assets/second/cross_green.svg),
+    url(../assets/second/circle_orange.svg),
+    url(../assets/second/cross_marine.svg), url(../assets/second/cross_red.svg),
+    url(../assets/second/line_blue.svg);
+  background-position: 20% 20%, 10% 0%, 75% 38%, 80% 30%, 60% 60%;
+  background-repeat: no-repeat;
   background-size: 4%;
   filter: blur(2px);
   z-index: 0;
@@ -36,11 +40,27 @@
   top: 0;
   width: 100%;
   height: 300%;
-  background-image: url(../assets/cross_purple.svg),
-    url(../assets/circle_marine.svg), url(../assets/line_orange.svg);
-  background-position: 30% 30%, 70% 60%, 60% 92%;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url(../assets/third/circle_red.svg),
+    url(../assets/third/circle_yellow.svg), url(../assets/third/cross_blue.svg),
+    url(../assets/third/cross_yellow.svg), url(../assets/third/line_orange.svg),
+    url(../assets/third/line_pink.svg);
+  background-position: 30% 30%, 70% 60%, 60% 92%, 5% 30%, 5% 65%, 98% 70%;
+  background-repeat: no-repeat;
   background-size: 2%;
-  filter: blur(4px);
+  filter: blur(3px);
   z-index: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .first {
+    background-size: 12%;
+  }
+
+  .second {
+    background-size: 10%;
+  }
+
+  .third {
+    background-size: 8%;
+  }
 }
